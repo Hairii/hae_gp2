@@ -14,6 +14,8 @@ public:
 	Vec2 add(Vec2 v) {
 		Vec2 xy;
 
-		xy = this->
+		xy = this->x + v.x;
+		xy = this->y + v.y;
+
 	}
 };

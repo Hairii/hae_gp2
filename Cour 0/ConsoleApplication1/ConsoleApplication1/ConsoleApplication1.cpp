@@ -3,9 +3,11 @@
 
 #include "pch.h"
 #include <iostream>
+#include "Vec2.hpp"
 
 int main()
 {
+	Vec2 toto(66, 67);
     std::cout << "Hello World!\n"; 
 }
 
