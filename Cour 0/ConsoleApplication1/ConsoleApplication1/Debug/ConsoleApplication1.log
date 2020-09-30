@@ -1,4 +1,7 @@
-﻿  Arr.cpp
+﻿  pch.cpp
+  Arr.cpp
   ConsoleApplication1.cpp
+  Vec2T.cpp
+  Vec3T.cpp
   Génération de code en cours...
-  ConsoleApplication1.vcxproj -> C:\workspace_Gp2\hae_gp2\Cour 0\ConsoleApplication1\Debug\ConsoleApplication1.exe
+  ConsoleApplication1.vcxproj -> C:\Cours\Programmation 2 année\GP2\hae_gp2\Cour 0\ConsoleApplication1\Debug\ConsoleApplication1.exe

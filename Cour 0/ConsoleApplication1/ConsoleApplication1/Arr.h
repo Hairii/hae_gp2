@@ -17,7 +17,7 @@ public:
 
 	virtual ~Arr() {
 		delete[] data;
-		std::cout << "deleted" << std::endl;
+		//std::cout << "deleted" << std::endl;
 	}
 
 	T & get(int idx) {

@@ -3,94 +3,144 @@
 
 #include "pch.h"
 #include <iostream>
+#include <string>
 #include "Vec2.hpp"
 #include "Vec2T.h"
 #include "Vec3T.h"
 #include "Arr.h"
-#include <string>
+//#include "DynArr.h"
+#include "Node.h"
 
 using namespace std;
 
-void subFunction(){
+void subFunc()
+{
+	Arr<int>* foo = new Arr<int>(4);
 
-	/* suprrime
-	
-	Vec2 sapin(77);
-	Vec2* sapinPtr = new Vec2(66);
-	
-	delete sapinPtr;*/
+	cout << foo->get(0) << endl;
 
+	delete foo;
+}
 
-	Arr<int> foo(4);
-
+void subFunc1()
+{
+	/*DynArr<int> foo(4);
 	cout << foo.get(0) << endl;
 	foo.get(0) = 33;
 	cout << foo.get(0) << endl;
 
+	foo.resize(13);
+
+	for (int i = 0; i < 10; i++)
+	{
+		cout << foo.get(i) << endl;
+	}
+
+	foo.set(12, 9);
+	cout << foo.get(12) << endl;*/
+
+	Node* root = new Node(10);
+	root = root->heapify(9);
+	root = root->heapify(11);
+	root = root->heapify(12);
+
+	/*float test;
+	Node.get*/
+
+	cout << root << endl;
+	auto stop = 6;
+
 }
 
+int StringLengh(const char* str) {
+	int compt = 0;
+	while (*str != 0)
+	{
+		compt++;
+		str++;
+	}
+	cout << compt << endl;
+	return compt;
+}
+
+void StringCopy(char* dst, const char* src)
+{
+	while (*src) //while value(src) is not zero
+	{
+		/*char dstchar = *dst;
+		*dst = dstchar;*/
+		*dst = *src;//copy value(src) in value (dst
+
+		dst++;
+		src++;
+	}
+}
+
+void subFunc2()
+{
+	char tot2[5] = "toto";
+	auto k = 0;
+	int nb = StringLengh(tot2);
+
+	char sapin[128] = {};
+	StringCopy(sapin, "lapin");
+	cout << sapin << endl;
+}
 
 int main()
 {
-	subFunction();
-
-	//char * tab = new char[1024 * 1024 * 1024]; // allouer 1 Gigat
-
-	/* affiche les valeurs des vecteurs
-
-	Vec2 toto(66, 67);
+	/*Vec2 a(16, 23);
 
 	Vec2T<int> t0(4, 4);
 	Vec2T<int> t1(4, 4);
 
-	auto tres = t1.add(t0); 
+	auto tres = t1.Add(t0);
+
+	Vec3T<int> t3(3, 3, 3);
+	Vec3T<int> t4(5, 5, 5);
+
+	auto t = t3.ADD(t4);
+
 	cout << to_string(tres.x) << endl;
 
-	Vec2T<float> t3(2.6, 4.9);
-	Vec2T<float> t4(7.2, 1.8);
-
-	auto tres1 = t4.add(t3);
-
 	Vec2T<char> vc0('a', 'b');
-	Vec2T<char> vc1('d', 'e');
-
-	auto vcres = vc1.add(vc0);
+	Vec2T<char> vc1('c', 'd');
+	auto vcres = vc0.Add(vc1);
 
 	cout << string(1, 'a') << endl;
-	cout << string(1, vcres.x) << " " << string(1, vcres.y) << endl;
+	cout << string(1, vcres.x) << string(1, vcres.y) << endl;
 	auto end = 0;
 
-
-	Vec3T<int> t5(5, 5, 5);
-	Vec3T<int> t6(5, 5, 5);
-
-	auto tres2 = t5.add(t6);
-	
-	Vec3T<float> t7(7.2, 5.1, 4.3);
-	Vec3T<float> t8(1.5, 0.8, 9.4);
-
-	auto tres3 = t8.add(t7);*/
-
-
-	//---------------------------------------------------------------------------------------
-
-
-	/*affiche les valeurs du tableau ,la taille du tableau et l'emplacament du pointeur dans la mémoire
-
 	int tab[] = { 0,1,2,3 };
-	int szTab = sizeof(tab) / sizeof(int);  // taille du tableau
-
-	for (int i = 0; i < szTab; i++) {
+	int szTab = sizeof(tab) / sizeof(int);
+	for (int i = 0; i < szTab; i++)
+	{
 		cout << tab[i];
 	}
 
 	int* c0 = tab;
 	int* c1 = &(tab[0]);
 
-	int valC = *c0++;*/
+	int valC = *c0++;
+
+	Vec2 de(33, 44);
+	Vec2 dee(55, 55);
+	de.incr(&dee);
+	cout << to_string(dee.x) << endl;
+
+	Vec2* c = new Vec2(66,0);
+
+	cout << endl;*/
+
+	//subFunc();
+
+	subFunc1();
+
+	//subFunc2();
+
 
 	cout << endl;
-}	
+}
 
 // Exécuter le programme : Ctrl+F5 ou menu Déboguer > Exécuter sans débogage
 // Déboguer le programme : F5 ou menu Déboguer > Démarrer le débogage
