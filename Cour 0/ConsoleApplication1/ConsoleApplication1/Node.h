@@ -62,10 +62,17 @@ public:
 		}
 	}
 
-	Node* remove(float val) {
-		//si on a est la clé, on supprime la valeur et on restructure l'arbre
-		//sinon chercher a gauche 
-		// chercher a droite
+	 Node* remove(float val) {
+		Node * cur = this;
+		
+		if (val == key) 
+			cur = cur->deleteMin();
+		if (cur == nullptr) return nullptr;
+
+		if (cur->left)cur->left = cur->left->remove(val);
+		if (cur->right)cur->right = cur->right->remove(val);
+
+		return cur;
 	}
 
 	float getMin() {
@@ -82,12 +89,17 @@ public:
 
 		delete this;
 
+		if (l == nullptr)return r;
+		if (r == nullptr)return l;
+
 		return Node::merge(l, r);
 	}
 
 	static Node* merge(Node* a0, Node* a1) {
 
-		if (nullptr != a1)return a0;
+		if (a0 == nullptr)return a0;
+		if (a1 == nullptr)return a0;
+
 		float val = a1->getMin();
 		Node* cur = a0;
 		cur = cur->heapify(val);
@@ -95,14 +107,36 @@ public:
 		Node * l = a1->left;
 		Node * r = a1->right;
 
-		cur->left = nullptr;
-		cur->right = nullptr;
+		a1->left = nullptr;
+		a1->right = nullptr;
 
 		delete a1;
 
-		a0 = merge(a0, l);
-		a0 = merge(a0, r);
+		cur = merge(cur, l);
+		cur = merge(cur, r);
+
+		return cur;
 
 	}
 
+	static Node* fromTabRec(float* t, int tlen) {
+		if (!tlen)return nullptr;
+		Node* cur = new Node(t[0]);
+		if (tlen > 1) {
+			cur->merge(cur, fromTabRec(t + 1, tlen - 1));
+			return cur;
+		}
+	}
+
+	static Node* fromTab(float* t, int tlen) {
+		if (!tlen)return nullptr;
+		Node* root = new Node(t[0]);
+
+		if (tlen > 1) {
+			for (int i = 1; i < tlen; ++i) {
+				root->heapify(t[i]);
+			}
+		}
+		return root;
+	}
 };

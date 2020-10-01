@@ -3,12 +3,13 @@
 
 #include "pch.h"
 #include <iostream>
+#include <functional>
 #include <string>
 #include "Vec2.hpp"
 #include "Vec2T.h"
 #include "Vec3T.h"
 #include "Arr.h"
-//#include "DynArr.h"
+#include "DynArr.h"
 #include "Node.h"
 
 using namespace std;
@@ -48,14 +49,17 @@ void subFunc1()
 
 	root = Node::merge(root, new Node(12));
 
-	root = Node::merge(root, new Node(12, new Node(8), new Node));
+	root = Node::merge(root, new Node(12, new Node(8), new Node()));
 	auto stop = 11;
 
 	Node * n = new Node(1, new Node(2), new Node(3));
-	
-	if (!n->isOk())throw "n is not a valid Heap";
+
 	root = root->deleteMin();
-	root = root;
+	if (!n->isOk())throw "n is not a valid Heap";
+
+	root = root->remove(12.0);
+
+	if(!root->isOk()) throw"root is not a valid Heap";
 }
 
 int StringLengh(const char* str) {
@@ -93,8 +97,62 @@ void subFunc2()
 	cout << sapin << endl;
 }
 
+
+DynArr <float> * doHeapSort(float * tab, int tabSize) {
+
+	DynArr<float> * f = new DynArr<float>(tabSize);
+
+	Node* root = new Node(tab[0]);
+	for (int i = 1; i < tabSize; ++i)
+		root = root->heapify(tab[i]);
+	int idx = 0;
+	while (root) {
+		float val = root->getMin();
+		f->set(idx, val);
+		root = root->deleteMin();
+		idx++;
+	}
+
+		return f;
+}
+
+void heapSort() {
+	float tf[4] = { 1.0,15.0,-1.0,25.0 };
+	DynArr<float>* tab = doHeapSort(tf, 4);
+
+	for (int i = 0; i < 4; ++i) {
+		cout << tab->get(i) << " ";
+	}
+	cout << endl;
+}
+
+void subFunc3() {
+	
+	DynArr<float> tab(0);
+	for (int i = 0; i < 10; ++i) {
+		tab.set(i, i);
+		tab.reverse();
+		tab.push_back(66);
+
+		DynArr<float>tab0(0);
+
+		tab.append(tab0);
+
+		std::function<void(float)> affiche = [](float elem) {
+			printf("%f ", elem);
+		};
+
+		tab.iter(affiche);
+		printf("\n");
+		
+		auto k = 0;
+	}
+}
+
 int main()
 {
+
+	heapSort();
 	/*Vec2 a(16, 23);
 
 	Vec2T<int> t0(4, 4);
@@ -140,10 +198,10 @@ int main()
 
 	//subFunc();
 
-	subFunc1();
+	//subFunc1();
 
 	//subFunc2();
-
+	subFunc3();
 
 	cout << endl;
 }
