@@ -44,12 +44,18 @@ void subFunc1()
 	root = root->heapify(11);
 	root = root->heapify(12);
 
-	/*float test;
-	Node.get*/
+	if (!root->isOk())throw"root is not a valid Heap";
 
-	cout << root << endl;
-	auto stop = 6;
+	root = Node::merge(root, new Node(12));
 
+	root = Node::merge(root, new Node(12, new Node(8), new Node));
+	auto stop = 11;
+
+	Node * n = new Node(1, new Node(2), new Node(3));
+	
+	if (!n->isOk())throw "n is not a valid Heap";
+	root = root->deleteMin();
+	root = root;
 }
 
 int StringLengh(const char* str) {

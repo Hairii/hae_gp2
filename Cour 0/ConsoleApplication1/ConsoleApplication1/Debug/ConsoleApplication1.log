@@ -1,7 +1,3 @@
-﻿  pch.cpp
-  Arr.cpp
-  ConsoleApplication1.cpp
-  Vec2T.cpp
-  Vec3T.cpp
-  Génération de code en cours...
-  ConsoleApplication1.vcxproj -> C:\Cours\Programmation 2 année\GP2\hae_gp2\Cour 0\ConsoleApplication1\Debug\ConsoleApplication1.exe
+﻿  ConsoleApplication1.cpp
+c:\workspace_gp2\t\gp2-20201001t120639z-001\gp2\cour 0\consoleapplication1\consoleapplication1\node.h(106): warning C4715: 'Node::merge' : les chemins de contrôle ne retournent pas tous une valeur
+  ConsoleApplication1.vcxproj -> C:\workspace_Gp2\t\Gp2-20201001T120639Z-001\Gp2\Cour 0\ConsoleApplication1\Debug\ConsoleApplication1.exe

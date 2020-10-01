@@ -1,2 +1,2 @@
-PlatformToolSet=v142:VCToolArchitecture=Native32Bit:VCToolsVersion=14.27.29110:TargetPlatformVersion=10.0.18362.0:
-Debug|Win32|C:\Cours\Programmation 2 année\GP2\hae_gp2\Cour 0\ConsoleApplication1\|
+#TargetFrameworkVersion=v4.0:PlatformToolSet=v141:EnableManagedIncrementalBuild=false:VCToolArchitecture=Native32Bit:WindowsTargetPlatformVersion=10.0.17763.0
+Debug|Win32|C:\workspace_Gp2\t\Gp2-20201001T120639Z-001\Gp2\Cour 0\ConsoleApplication1\|

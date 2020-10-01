@@ -12,7 +12,7 @@ public:
 	Node() {
 	}
 
-	Node(float value) {
+	Node(float value, Node * l = nullptr, Node * r = nullptr) {
 		key = value;
 	}
 
@@ -51,10 +51,14 @@ public:
 			return right->key >= key;
 		else if (right == nullptr)
 		{
-
+			return left->key >= key;
 		}
 		else {
+			//les deux ne sont pas nul
+			if (key > left->key)return false;
+			if (key > right->key)return false;
 
+			return left->isOk() && right->isOk();
 		}
 	}
 
@@ -71,10 +75,33 @@ public:
 
 	Node* deleteMin() {
 		//supprime la valeur la plus faible de l'arbre
-		//delete left;
+		Node * l = left;
+		Node * r = right;
+
+		left = right = nullptr;
+
+		delete this;
+
+		return Node::merge(l, r);
 	}
 
-	Node* merge(Node* a0, Node* a1) {
+	static Node* merge(Node* a0, Node* a1) {
+
+		if (nullptr != a1)return a0;
+		float val = a1->getMin();
+		Node* cur = a0;
+		cur = cur->heapify(val);
+
+		Node * l = a1->left;
+		Node * r = a1->right;
+
+		cur->left = nullptr;
+		cur->right = nullptr;
+
+		delete a1;
+
+		a0 = merge(a0, l);
+		a0 = merge(a0, r);
 
 	}
 
