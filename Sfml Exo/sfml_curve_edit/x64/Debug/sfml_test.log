@@ -1,0 +1,3 @@
+﻿  sfml_test.cpp
+C:\Gp2\Sfml Exo\sfml_curve_edit\sfml_test.cpp(1,1): warning C4819: Le fichier contient un caractère qui ne peut pas être représenté dans la page de codes actuelle (932). Enregistrez le fichier au format Unicode pour éviter de perdre des données
+  sfml_test.vcxproj -> C:\Gp2\Sfml Exo\sfml_curve_edit\x64\Debug\sfml_test.exe

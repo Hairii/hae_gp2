@@ -1,0 +1,2 @@
+C:\Gp2\Sfml Exo\sfml_curve_edit\x64\Debug\sfml_test.exe
+C:\Gp2\Sfml Exo\sfml_curve_edit\x64\Debug\sfml_test.pdb
