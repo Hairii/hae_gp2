@@ -1,0 +1,5 @@
+﻿  Sfml.cpp
+C:\Gp2\Sfml Exo\Sfml\Sfml\Sfml.cpp(67,25): warning C4244: 'initialisation' : conversion de 'float' en 'int', perte possible de données
+C:\Gp2\Sfml Exo\Sfml\Sfml\Sfml.cpp(68,52): warning C4244: '+=' : conversion de 'float' en 'int', perte possible de données
+C:\Gp2\Sfml Exo\Sfml\Sfml\Sfml.cpp(70,33): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+  Sfml.vcxproj -> C:\Gp2\Sfml Exo\Sfml\x64\Debug\Sfml.exe

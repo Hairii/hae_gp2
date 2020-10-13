@@ -1,0 +1,30 @@
+﻿  Sfml.cpp
+C:\Gp2\Sfml\Sfml\Sfml\Sfml.cpp(1,1): warning C4819: Le fichier contient un caractère qui ne peut pas être représenté dans la page de codes actuelle (932). Enregistrez le fichier au format Unicode pour éviter de perdre des données
+C:\Gp2\Sfml\Sfml\Sfml\Sfml.cpp(9,22): error C2653: 'sf' : n'est pas un nom de classe ni d'espace de noms
+C:\Gp2\Sfml\Sfml\Sfml\Sfml.cpp(9,9): error C2065: 'RenderWindow' : identificateur non déclaré
+C:\Gp2\Sfml\Sfml\Sfml\Sfml.cpp(9,22): error C2146: erreur de syntaxe : absence de ';' avant l'identificateur 'window'
+C:\Gp2\Sfml\Sfml\Sfml\Sfml.cpp(9,42): error C2653: 'sf' : n'est pas un nom de classe ni d'espace de noms
+C:\Gp2\Sfml\Sfml\Sfml\Sfml.cpp(9,33): error C3861: 'VideoMode' : identificateur introuvable
+C:\Gp2\Sfml\Sfml\Sfml\Sfml.cpp(9,22): error C3861: 'window' : identificateur introuvable
+C:\Gp2\Sfml\Sfml\Sfml\Sfml.cpp(10,21): error C2653: 'sf' : n'est pas un nom de classe ni d'espace de noms
+C:\Gp2\Sfml\Sfml\Sfml\Sfml.cpp(10,9): error C2065: 'CircleShape' : identificateur non déclaré
+C:\Gp2\Sfml\Sfml\Sfml\Sfml.cpp(10,21): error C2146: erreur de syntaxe : absence de ';' avant l'identificateur 'shape'
+C:\Gp2\Sfml\Sfml\Sfml\Sfml.cpp(10,21): error C3861: 'shape' : identificateur introuvable
+C:\Gp2\Sfml\Sfml\Sfml\Sfml.cpp(11,5): error C2065: 'shape' : identificateur non déclaré
+C:\Gp2\Sfml\Sfml\Sfml\Sfml.cpp(11,40): error C2653: 'sf' : n'est pas un nom de classe ni d'espace de noms
+C:\Gp2\Sfml\Sfml\Sfml\Sfml.cpp(11,35): error C2065: 'Green' : identificateur non déclaré
+C:\Gp2\Sfml\Sfml\Sfml\Sfml.cpp(13,12): error C2065: 'window' : identificateur non déclaré
+C:\Gp2\Sfml\Sfml\Sfml\Sfml.cpp(15,19): error C2653: 'sf' : n'est pas un nom de classe ni d'espace de noms
+C:\Gp2\Sfml\Sfml\Sfml\Sfml.cpp(15,13): error C2065: 'Event' : identificateur non déclaré
+C:\Gp2\Sfml\Sfml\Sfml\Sfml.cpp(15,19): error C2146: erreur de syntaxe : absence de ';' avant l'identificateur 'event'
+C:\Gp2\Sfml\Sfml\Sfml\Sfml.cpp(15,19): error C2065: 'event' : identificateur non déclaré
+C:\Gp2\Sfml\Sfml\Sfml\Sfml.cpp(16,16): error C2065: 'window' : identificateur non déclaré
+C:\Gp2\Sfml\Sfml\Sfml\Sfml.cpp(16,33): error C2065: 'event' : identificateur non déclaré
+C:\Gp2\Sfml\Sfml\Sfml\Sfml.cpp(18,17): error C2065: 'event' : identificateur non déclaré
+C:\Gp2\Sfml\Sfml\Sfml\Sfml.cpp(18,48): error C2653: 'sf' : n'est pas un nom de classe ni d'espace de noms
+C:\Gp2\Sfml\Sfml\Sfml\Sfml.cpp(18,42): error C2065: 'Closed' : identificateur non déclaré
+C:\Gp2\Sfml\Sfml\Sfml\Sfml.cpp(19,17): error C2065: 'window' : identificateur non déclaré
+C:\Gp2\Sfml\Sfml\Sfml\Sfml.cpp(22,9): error C2065: 'window' : identificateur non déclaré
+C:\Gp2\Sfml\Sfml\Sfml\Sfml.cpp(23,9): error C2065: 'window' : identificateur non déclaré
+C:\Gp2\Sfml\Sfml\Sfml\Sfml.cpp(23,21): error C2065: 'shape' : identificateur non déclaré
+C:\Gp2\Sfml\Sfml\Sfml\Sfml.cpp(24,9): error C2065: 'window' : identificateur non déclaré
