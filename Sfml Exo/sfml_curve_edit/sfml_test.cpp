@@ -36,7 +36,7 @@ int main()
                 window.close();
             else if (event.type == sf::Event::KeyPressed) {
                 if (event.key.code == sf::Keyboard::BackSpace) {
-                    std::cout << "ca marche" << std::endl;
+                    std::cout << "ca marche pas" << std::endl;
                 }
                 //si backspace 
                 //reset tout les points
@@ -66,6 +66,11 @@ int main()
         line.setPrimitiveType(sf::PrimitiveType::Lines);
         line.append(sf::Vertex(sf::Vector2f(50, 50),sf::Color(0x5DFFA3ff)));
         line.append(sf::Vertex(sf::Vector2f(500, 500),sf::Color(0xF5363Cff)));
+
+        /*VertexArray line(PrimitiveType::Lines, 2);
+        line[0] = Vertex(Vector2f(50, 50), Color(0x5DFFA3ff));
+        line[1] = Vertex(Vector2f(500, 500), Color(0x5DFFA3ff));*/
+        
 
         window.clear();
         
