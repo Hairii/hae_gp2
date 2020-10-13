@@ -35,6 +35,9 @@ int main()
             if (event.type == sf::Event::Closed)
                 window.close();
             else if (event.type == sf::Event::KeyPressed) {
+                if (event.key.code == sf::Keyboard::BackSpace) {
+                    std::cout << "ca marche" << std::endl;
+                }
                 //si backspace 
                 //reset tout les points
                 //myPoints.clear()
