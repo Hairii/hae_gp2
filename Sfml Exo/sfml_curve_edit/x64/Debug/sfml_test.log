@@ -1,3 +1,19 @@
-﻿  sfml_test.cpp
-C:\Gp2\Sfml Exo\sfml_curve_edit\sfml_test.cpp(1,1): warning C4819: Le fichier contient un caractère qui ne peut pas être représenté dans la page de codes actuelle (932). Enregistrez le fichier au format Unicode pour éviter de perdre des données
-  sfml_test.vcxproj -> C:\Gp2\Sfml Exo\sfml_curve_edit\x64\Debug\sfml_test.exe
+﻿  Interp.cpp
+c:\workspace_gp2\hae_gp2\sfml exo\sfml_curve_edit\interp.hpp(24): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
+c:\workspace_gp2\hae_gp2\sfml exo\sfml_curve_edit\interp.hpp(28): warning C4244: '+=' : conversion de 'double' en 'float', perte possible de données
+c:\workspace_gp2\hae_gp2\sfml exo\sfml_curve_edit\interp.hpp(31): warning C4244: 'return' : conversion de 'double' en 'float', perte possible de données
+  sfml_test.cpp
+c:\workspace_gp2\hae_gp2\sfml exo\sfml_curve_edit\interp.hpp(24): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
+c:\workspace_gp2\hae_gp2\sfml exo\sfml_curve_edit\interp.hpp(28): warning C4244: '+=' : conversion de 'double' en 'float', perte possible de données
+c:\workspace_gp2\hae_gp2\sfml exo\sfml_curve_edit\interp.hpp(31): warning C4244: 'return' : conversion de 'double' en 'float', perte possible de données
+c:\workspace_gp2\hae_gp2\sfml exo\sfml_curve_edit\sfml_test.cpp(62): warning C4244: 'argument' : conversion de 'int' en 'T', perte possible de données
+          with
+          [
+              T=float
+          ]
+c:\workspace_gp2\hae_gp2\sfml exo\sfml_curve_edit\sfml_test.cpp(92): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
+c:\workspace_gp2\hae_gp2\sfml exo\sfml_curve_edit\sfml_test.cpp(97): warning C4244: '=' : conversion de 'float' en 'sf::Uint8', perte possible de données
+c:\workspace_gp2\hae_gp2\sfml exo\sfml_curve_edit\sfml_test.cpp(98): warning C4244: '=' : conversion de 'float' en 'sf::Uint8', perte possible de données
+c:\workspace_gp2\hae_gp2\sfml exo\sfml_curve_edit\sfml_test.cpp(99): warning C4244: '=' : conversion de 'float' en 'sf::Uint8', perte possible de données
+  Génération de code en cours...
+  sfml_test.vcxproj -> C:\workspace_Gp2\hae_gp2\Sfml Exo\sfml_curve_edit\x64\Debug\sfml_test.exe

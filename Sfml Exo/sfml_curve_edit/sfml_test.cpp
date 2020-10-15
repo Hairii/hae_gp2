@@ -5,6 +5,8 @@
 
 #include <SFML/Graphics.hpp>
 #include <SFML/Window/Keyboard.hpp>
+#include "Interp.hpp"
+#include "Game.h"
 
 using namespace std;
 using namespace sf;
@@ -12,76 +14,109 @@ using namespace sf;
 
 int main()
 {
-    std::cout << "Hello World!\n";
-    sf::RenderWindow window(sf::VideoMode(1280, 720,32), "SFML works!");
+	cout << "Hello World!\n";
+	sf::RenderWindow window(sf::VideoMode(1280, 720, 32), "SFML works!");
 
-    sf::Text text;
-    sf::VertexArray line;
-    sf::Font font;
-    std::vector<Vector2f> myPoints;
+	Text text;
+	Font font;
+	vector<Vertex> myPoints;
 
-    if (!font.loadFromFile("res/MAIAN.TTF")) {
-        std::cout << "ERROR NO FONT" << std::endl;
-        return 1;
-    }
+	VertexArray line(PrimitiveType::LineStrip);
+	myPoints.push_back(Vertex(Vector2f(50, 50), Color(0x5DFFA3ff)));
+	myPoints.push_back(Vertex(Vector2f(500, 500), Color(0xF5363Cff)));
+	myPoints.push_back(Vertex(Vector2f(50, 500), Color(0xF5363Cff)));
 
-    // charger une fonte ?
-    while (window.isOpen())
-    {
-        sf::Event event;
+	if (!font.loadFromFile("res/MAIAN.TTF")) {
+		cout << "ERROR NO FONT" << endl;
+		return 1;
+	}
+	
+	// charger une fonte ?
+	while (window.isOpen())
+	{
+		sf::Event event;
 
-        while (window.pollEvent(event))
-        {
-            if (event.type == sf::Event::Closed)
-                window.close();
-            else if (event.type == sf::Event::KeyPressed) {
-                if (event.key.code == sf::Keyboard::BackSpace) {
-                    std::cout << "ca marche pas" << std::endl;
-                }
-                //si backspace 
-                //reset tout les points
-                //myPoints.clear()
-            }
-            
-            if (event.type == sf::Event::MouseButtonPressed) {
-               //ajouter un point
-                //myPoints.push_back
-            }
+		while (window.pollEvent(event))
+		{
+			if (event.type == sf::Event::Closed)
+				window.close();
+			else if (event.type == sf::Event::KeyPressed) {
+				//si backspace 
+				//reset tout les points
+				if (event.key.code == sf::Keyboard::Key::BackSpace)
+					myPoints.clear();
+			}
 
-        }
-        //dessiner le tableau de point avec la classe sf:: VertexArray
-        
-        //afficher la doc
+			if (event.type == sf::Event::MouseButtonPressed) {
+				//ajouter un point
+				//add a vertex
 
-        // "Backspace pour remettre les point a 0"
-        // "Nb de points courants"
-        
-        text.setFont(font);
-        text.setString("Touche Backspace pour supprimer les points");
-        text.setCharacterSize(24);
-        text.setPosition(0, 0);
-        text.setFillColor(sf::Color::White);
+				static int colors[] = {
+					0x59EB7F,
+					0xE4F55D,
+					0xDEB65F,
+					0xF57F5D,
+					0xEB37E5 };
 
-        line.clear();
-        line.setPrimitiveType(sf::PrimitiveType::Lines);
-        line.append(sf::Vertex(sf::Vector2f(50, 50),sf::Color(0x5DFFA3ff)));
-        line.append(sf::Vertex(sf::Vector2f(500, 500),sf::Color(0xF5363Cff)));
+				static int choice = 0;
+				choice = (choice + 1) % 5;
+				Vertex v(Vector2f(event.mouseButton.x, event.mouseButton.y), Color((colors[choice] << 8) | 0xff));
+				myPoints.push_back(v);
+			}
 
-        /*VertexArray line(PrimitiveType::Lines, 2);
-        line[0] = Vertex(Vector2f(50, 50), Color(0x5DFFA3ff));
-        line[1] = Vertex(Vector2f(500, 500), Color(0x5DFFA3ff));*/
-        
+		}
 
-        window.clear();
-        
-        window.draw(text);
-        window.draw(line);
+		text.setFont(font);
+		text.setString("Touche Backspace pour supprimer les points");
+		text.setCharacterSize(24);
+		text.setPosition(0, 0);
+		text.setFillColor(Color::White);
 
-        window.display();
-    }
+		//recreate all the line each frame
+		line.clear();
 
-    return 0;
+		if (myPoints.size() > 1)
+			for (int i = 0; i < myPoints.size(); i++) {
+				//recuperer vtx i -1
+				//recuperer vtx i 
+				//recuperer vtx i + 1
+				//recuperer vtx i + 2
+				sf::Vertex v0 = (i == 0) ? myPoints[i] : myPoints[i - 1];//i-1
+				sf::Vertex v1 = myPoints[i];//i
+				sf::Vertex v2 = ((i + 1) >= myPoints.size()) ? myPoints[myPoints.size() - 1] : myPoints[i + 1];//i;
+				sf::Vertex v3 = ((i + 2) >= myPoints.size()) ? myPoints[myPoints.size() - 1] : myPoints[i + 2];//i
+
+				//pour j  de 0...20
+				//  t vaut 1 / j
+				//  inserer catmull( v i-1, v i, v i +1, vi +2 , j / 20.0 ) 
+				for (int j = 0; j <= 20; j++) {
+					float t = j / 20.0;
+					sf::Vector2f pos = Interp::c2(v0.position, v1.position, v2.position, v3.position, t);
+
+					sf::Color col;
+					col.a = 255;
+					col.r = Interp::catmull(v0.color.r, v1.color.r, v2.color.r, v3.color.r, t);
+					col.g = Interp::catmull(v0.color.g, v1.color.g, v2.color.g, v3.color.g, t);;
+					col.b = Interp::catmull(v0.color.b, v1.color.b, v2.color.b, v3.color.b, t);;
+
+					line.append(sf::Vertex(pos, col));
+				}
+			}
+
+		Game g;
+
+
+		window.clear();
+
+		window.draw(text);
+		window.draw(line);
+
+		window.display();
+	}
+
+	return 0;
 }
+
 
 // Exécuter le programme : Ctrl+F5 ou menu Déboguer > Exécuter sans débogage
 // Déboguer le programme : F5 ou menu Déboguer > Démarrer le débogage
