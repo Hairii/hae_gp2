@@ -1,8 +1,0 @@
-﻿  Game.cpp
-c:\workspace_gp2\hae_gp2\sfml exo\sfml_curve_edit - copie\game.hpp(9): error C2011: 'Game' : redéfinition du type 'class'
-  c:\workspace_gp2\hae_gp2\sfml exo\sfml_curve_edit - copie\game.h(6): note: voir la déclaration de 'Game'
-  sfml_test.cpp
-c:\workspace_gp2\hae_gp2\sfml exo\sfml_curve_edit - copie\interp.hpp(24): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
-c:\workspace_gp2\hae_gp2\sfml exo\sfml_curve_edit - copie\interp.hpp(28): warning C4244: '+=' : conversion de 'double' en 'float', perte possible de données
-c:\workspace_gp2\hae_gp2\sfml exo\sfml_curve_edit - copie\interp.hpp(31): warning C4244: 'return' : conversion de 'double' en 'float', perte possible de données
-  Génération de code en cours...
