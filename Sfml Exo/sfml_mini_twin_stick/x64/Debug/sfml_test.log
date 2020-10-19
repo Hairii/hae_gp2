@@ -1,5 +1,2 @@
 ﻿  sfml_test.cpp
-C:\Cours\Programmation 2 année\GP2\hae_gp2\Sfml Exo\sfml_mini_twin_stick\Interp.hpp(22,11): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
-C:\Cours\Programmation 2 année\GP2\hae_gp2\Sfml Exo\sfml_mini_twin_stick\Interp.hpp(26,1): warning C4244: '+=' : conversion de 'double' en 'float', perte possible de données
-C:\Cours\Programmation 2 année\GP2\hae_gp2\Sfml Exo\sfml_mini_twin_stick\Interp.hpp(29,14): warning C4244: 'return' : conversion de 'double' en 'float', perte possible de données
   sfml_test.vcxproj -> C:\Cours\Programmation 2 année\GP2\hae_gp2\Sfml Exo\sfml_mini_twin_stick\x64\Debug\sfml_test.exe

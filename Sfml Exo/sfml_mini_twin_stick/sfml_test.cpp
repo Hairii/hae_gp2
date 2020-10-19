@@ -24,8 +24,14 @@ int main()
     while (window.isOpen())
     {
         sf::Event event;
-        while (window.pollEvent(event))
+        while (window.pollEvent(event)) {
+
+            if (event.type == sf::Event::MouseButtonPressed)
+            {
+                g.shoot(event);
+            }
             g.processInput(event);
+        }
         g.update();
         window.clear();
         g.draw(window);

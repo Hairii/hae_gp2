@@ -2,7 +2,7 @@
 
 #include "SFML/Graphics.hpp"
 
-using namespace sf;
+/*using namespace sf;
 
 class Interp{
 public:
@@ -41,4 +41,4 @@ public:
 			);
 		return res;
 	}
-};
+};*/
