@@ -20,4 +20,5 @@ C:\Cours\Programmation 2 année\GP2\hae_gp2\Sfml Exo\sfml_mini_twin_stick\Game.h
               T=float
           ]
 C:\Cours\Programmation 2 année\GP2\hae_gp2\Sfml Exo\sfml_mini_twin_stick\Game.hpp(104,45): warning C4244: 'argument' : conversion de 'double' en 'float', perte possible de données
+C:\Cours\Programmation 2 année\GP2\hae_gp2\Sfml Exo\sfml_mini_twin_stick\sfml_test.cpp(83,30): warning C4305: '*=' : troncation de 'double' à 'float'
   sfml_test.vcxproj -> C:\Cours\Programmation 2 année\GP2\hae_gp2\Sfml Exo\sfml_mini_twin_stick\x64\Debug\sfml_test.exe

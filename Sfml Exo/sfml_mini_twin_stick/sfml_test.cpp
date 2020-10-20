@@ -24,6 +24,12 @@ int main()
     }
     Game g(&window);
 
+    Vector2i winPos;
+
+    View v = window.getDefaultView();
+    Vector2f viewCenter = v.getCenter();
+    float shakeStrength = 0.0;
+
     sf::Clock timer;
     sf::Text fpsCounter;
 
@@ -50,13 +56,33 @@ int main()
             {
                 g.shoot(event);
             }
+
+            if (sf::Keyboard::isKeyPressed(sf::Keyboard::K)) {
+                shakeStrength = 15.0;
+            }
+
             g.processInput(event);
         }
         g.update(dt);
         window.clear();
+
+        window.setView(v);
+
+        Vector2f n(viewCenter);//viewCenter.x = shakeStrength * 10;
+        n.x += cos(shakeStrength * 1 * Dice::randSign());
+        n.y += sin(-shakeStrength * 1 * Dice::randSign());
+        v.setCenter(n);
+
+        window.setView(v);
+
         g.draw(window);
         window.draw(fpsCounter);
         window.display();
+
+
+        shakeStrength *= 0.85;
+        if (shakeStrength <= 0.01)
+            shakeStrength = 0.0;
 
         frameEnd = Lib::getTimeStamp();
         fpsCounter.setString("FPS:" + std::to_string(1.0 / dt));
