@@ -142,11 +142,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Dice.cpp" />
+    <ClCompile Include="Lib.cpp" />
     <ClCompile Include="sfml_test.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Dice.hpp" />
     <ClInclude Include="Game.hpp" />
     <ClInclude Include="Interp.hpp" />
+    <ClInclude Include="Lib.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

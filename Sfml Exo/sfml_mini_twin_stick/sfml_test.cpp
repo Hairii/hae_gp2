@@ -5,6 +5,8 @@
 
 #include <SFML/Graphics.hpp>
 #include <SFML/Window/Keyboard.hpp>
+#include "Dice.hpp"
+#include "Lib.hpp"
 #include "Game.hpp"
 #include "Interp.hpp"
 
@@ -21,8 +23,26 @@ int main()
         return 1;
     }
     Game g(&window);
+
+    sf::Clock timer;
+    sf::Text fpsCounter;
+
+    fpsCounter.setFont(font);
+    fpsCounter.setString("FPS:");
+
+    double frameStart = 0.0;
+    double frameEnd = 0.0;
+
     while (window.isOpen())
     {
+
+        double dt = frameEnd - frameStart;
+        frameStart = Lib::getTimeStamp();
+
+        if (dt < 0.001) {
+            dt = 0.001;
+        }
+
         sf::Event event;
         while (window.pollEvent(event)) {
 
@@ -32,10 +52,14 @@ int main()
             }
             g.processInput(event);
         }
-        g.update();
+        g.update(dt);
         window.clear();
         g.draw(window);
+        window.draw(fpsCounter);
         window.display();
+
+        frameEnd = Lib::getTimeStamp();
+        fpsCounter.setString("FPS:" + std::to_string(1.0 / dt));
     }
 
     return 0;

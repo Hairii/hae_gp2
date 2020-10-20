@@ -1,2 +1,23 @@
 ﻿  sfml_test.cpp
+C:\Cours\Programmation 2 année\GP2\hae_gp2\Sfml Exo\sfml_mini_twin_stick\Game.hpp(91,1): warning C4244: '-=' : conversion de 'double' en 'T', perte possible de données
+          with
+          [
+              T=float
+          ]
+C:\Cours\Programmation 2 année\GP2\hae_gp2\Sfml Exo\sfml_mini_twin_stick\Game.hpp(93,1): warning C4244: '-=' : conversion de 'double' en 'T', perte possible de données
+          with
+          [
+              T=float
+          ]
+C:\Cours\Programmation 2 année\GP2\hae_gp2\Sfml Exo\sfml_mini_twin_stick\Game.hpp(95,1): warning C4244: '+=' : conversion de 'double' en 'T', perte possible de données
+          with
+          [
+              T=float
+          ]
+C:\Cours\Programmation 2 année\GP2\hae_gp2\Sfml Exo\sfml_mini_twin_stick\Game.hpp(97,1): warning C4244: '+=' : conversion de 'double' en 'T', perte possible de données
+          with
+          [
+              T=float
+          ]
+C:\Cours\Programmation 2 année\GP2\hae_gp2\Sfml Exo\sfml_mini_twin_stick\Game.hpp(104,45): warning C4244: 'argument' : conversion de 'double' en 'float', perte possible de données
   sfml_test.vcxproj -> C:\Cours\Programmation 2 année\GP2\hae_gp2\Sfml Exo\sfml_mini_twin_stick\x64\Debug\sfml_test.exe
