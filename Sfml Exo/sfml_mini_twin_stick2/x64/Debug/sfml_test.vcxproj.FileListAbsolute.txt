@@ -1,0 +1,4 @@
+C:\Cours\Programmation 2 année\GP2\prof\sfml_mini_twin_stick\x64\Debug\sfml_test.exe
+C:\Cours\Programmation 2 année\GP2\prof\sfml_mini_twin_stick\x64\Debug\sfml_test.pdb
+C:\Cours\Programmation 2 année\GP2\hae_gp2\Sfml Exo\sfml_mini_twin_stick2\x64\Debug\sfml_test.exe
+C:\Cours\Programmation 2 année\GP2\hae_gp2\Sfml Exo\sfml_mini_twin_stick2\x64\Debug\sfml_test.pdb

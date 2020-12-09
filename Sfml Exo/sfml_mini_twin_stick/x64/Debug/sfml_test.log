@@ -1,24 +1,47 @@
 ﻿  sfml_test.cpp
-C:\Cours\Programmation 2 année\GP2\hae_gp2\Sfml Exo\sfml_mini_twin_stick\Game.hpp(91,1): warning C4244: '-=' : conversion de 'double' en 'T', perte possible de données
+C:\Cours\Programmation 2 année\GP2\hae_gp2\Sfml Exo\sfml_mini_twin_stick\Dice.hpp(12,23): warning C4244: 'return' : conversion de 'double' en 'float', perte possible de données
+C:\Cours\Programmation 2 année\GP2\hae_gp2\Sfml Exo\sfml_mini_twin_stick\Game.hpp(3,10): warning C4067: jetons inattendus après la directive du préprocesseur - saut de ligne attendu
+C:\Cours\Programmation 2 année\GP2\hae_gp2\Sfml Exo\sfml_mini_twin_stick\Game.hpp(30,68): warning C4244: 'argument' : conversion de 'T' en 'T', perte possible de données
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Cours\Programmation 2 année\GP2\hae_gp2\Sfml Exo\sfml_mini_twin_stick\Game.hpp(30,50): warning C4244: 'argument' : conversion de 'T' en 'T', perte possible de données
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Cours\Programmation 2 année\GP2\hae_gp2\Sfml Exo\sfml_mini_twin_stick\Game.hpp(67,1): warning C4244: '-=' : conversion de 'double' en 'T', perte possible de données
           with
           [
               T=float
           ]
-C:\Cours\Programmation 2 année\GP2\hae_gp2\Sfml Exo\sfml_mini_twin_stick\Game.hpp(93,1): warning C4244: '-=' : conversion de 'double' en 'T', perte possible de données
+C:\Cours\Programmation 2 année\GP2\hae_gp2\Sfml Exo\sfml_mini_twin_stick\Game.hpp(72,1): warning C4244: '-=' : conversion de 'double' en 'T', perte possible de données
           with
           [
               T=float
           ]
-C:\Cours\Programmation 2 année\GP2\hae_gp2\Sfml Exo\sfml_mini_twin_stick\Game.hpp(95,1): warning C4244: '+=' : conversion de 'double' en 'T', perte possible de données
+C:\Cours\Programmation 2 année\GP2\hae_gp2\Sfml Exo\sfml_mini_twin_stick\Game.hpp(76,1): warning C4244: '+=' : conversion de 'double' en 'T', perte possible de données
           with
           [
               T=float
           ]
-C:\Cours\Programmation 2 année\GP2\hae_gp2\Sfml Exo\sfml_mini_twin_stick\Game.hpp(97,1): warning C4244: '+=' : conversion de 'double' en 'T', perte possible de données
+C:\Cours\Programmation 2 année\GP2\hae_gp2\Sfml Exo\sfml_mini_twin_stick\Game.hpp(81,1): warning C4244: '+=' : conversion de 'double' en 'T', perte possible de données
           with
           [
               T=float
           ]
-C:\Cours\Programmation 2 année\GP2\hae_gp2\Sfml Exo\sfml_mini_twin_stick\Game.hpp(104,45): warning C4244: 'argument' : conversion de 'double' en 'float', perte possible de données
-C:\Cours\Programmation 2 année\GP2\hae_gp2\Sfml Exo\sfml_mini_twin_stick\sfml_test.cpp(83,30): warning C4305: '*=' : troncation de 'double' à 'float'
+C:\Cours\Programmation 2 année\GP2\hae_gp2\Sfml Exo\sfml_mini_twin_stick\Game.hpp(93,49): warning C4244: 'argument' : conversion de 'double' en 'float', perte possible de données
+C:\Cours\Programmation 2 année\GP2\hae_gp2\Sfml Exo\sfml_mini_twin_stick\Interp.hpp(22,11): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
+C:\Cours\Programmation 2 année\GP2\hae_gp2\Sfml Exo\sfml_mini_twin_stick\Interp.hpp(26,1): warning C4244: '+=' : conversion de 'double' en 'float', perte possible de données
+C:\Cours\Programmation 2 année\GP2\hae_gp2\Sfml Exo\sfml_mini_twin_stick\Interp.hpp(29,14): warning C4244: 'return' : conversion de 'double' en 'float', perte possible de données
+C:\Cours\Programmation 2 année\GP2\hae_gp2\Sfml Exo\sfml_mini_twin_stick\sfml_test.cpp(79,24): warning C4305: '*=' : troncation de 'double' à 'float'
   sfml_test.vcxproj -> C:\Cours\Programmation 2 année\GP2\hae_gp2\Sfml Exo\sfml_mini_twin_stick\x64\Debug\sfml_test.exe

@@ -1,0 +1,32 @@
+﻿  Game.cpp
+C:\Cours\Programmation 2 année\GP2\hae_gp2\sfml_mini_projet\Char.hpp(49,15): warning C4305: 'initialisation' : troncation de 'double' à 'float'
+C:\Cours\Programmation 2 année\GP2\hae_gp2\sfml_mini_projet\Char.hpp(50,15): warning C4305: 'initialisation' : troncation de 'double' à 'float'
+C:\Cours\Programmation 2 année\GP2\hae_gp2\sfml_mini_projet\Particle.hpp(40,30): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
+C:\Cours\Programmation 2 année\GP2\hae_gp2\sfml_mini_projet\Particle.hpp(51,16): warning C4244: 'argument' : conversion de 'double' en 'float', perte possible de données
+C:\Cours\Programmation 2 année\GP2\hae_gp2\sfml_mini_projet\ParticleMan.hpp(17,13): warning C4244: 'argument' : conversion de 'double' en 'float', perte possible de données
+C:\Cours\Programmation 2 année\GP2\hae_gp2\sfml_mini_projet\Char2.hpp(39,15): warning C4305: 'initialisation' : troncation de 'double' à 'float'
+C:\Cours\Programmation 2 année\GP2\hae_gp2\sfml_mini_projet\Char2.hpp(40,15): warning C4305: 'initialisation' : troncation de 'double' à 'float'
+C:\Cours\Programmation 2 année\GP2\hae_gp2\sfml_mini_projet\Bullet.hpp(32,18): warning C4305: 'initialisation' : troncation de 'double' à 'float'
+C:\Cours\Programmation 2 année\GP2\hae_gp2\sfml_mini_projet\Bullet.hpp(33,18): warning C4305: 'initialisation' : troncation de 'double' à 'float'
+C:\Cours\Programmation 2 année\GP2\hae_gp2\sfml_mini_projet\Game.cpp(6,1): warning C4005: '_CRT_SECURE_NO_WARNINGS' : redéfinition de macro
+C:\Cours\Programmation 2 année\GP2\hae_gp2\sfml_mini_projet\Game.cpp : message : voir la définition précédente de '_CRT_SECURE_NO_WARNINGS'
+C:\Cours\Programmation 2 année\GP2\hae_gp2\sfml_mini_projet\Game.cpp(76,47): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+C:\Cours\Programmation 2 année\GP2\hae_gp2\sfml_mini_projet\Game.cpp(76,24): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+C:\Cours\Programmation 2 année\GP2\hae_gp2\sfml_mini_projet\Game.cpp(121,14): warning C4244: '+=' : conversion de 'double' en 'float', perte possible de données
+C:\Cours\Programmation 2 année\GP2\hae_gp2\sfml_mini_projet\Game.cpp(133,19): warning C4244: '-=' : conversion de 'double' en 'float', perte possible de données
+C:\Cours\Programmation 2 année\GP2\hae_gp2\sfml_mini_projet\Game.cpp(136,20): warning C4305: '=' : troncation de 'double' à 'float'
+C:\Cours\Programmation 2 année\GP2\hae_gp2\sfml_mini_projet\Game.cpp(209,15): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
+C:\Cours\Programmation 2 année\GP2\hae_gp2\sfml_mini_projet\Game.cpp(210,16): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
+C:\Cours\Programmation 2 année\GP2\hae_gp2\sfml_mini_projet\Game.cpp(212,17): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
+C:\Cours\Programmation 2 année\GP2\hae_gp2\sfml_mini_projet\Game.cpp(213,17): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
+C:\Cours\Programmation 2 année\GP2\hae_gp2\sfml_mini_projet\Game.cpp(226,18): warning C4244: '/=' : conversion de 'double' en 'T', perte possible de données
+          with
+          [
+              T=float
+          ]
+C:\Cours\Programmation 2 année\GP2\hae_gp2\sfml_mini_projet\Game.cpp(227,18): warning C4244: '/=' : conversion de 'double' en 'T', perte possible de données
+          with
+          [
+              T=float
+          ]
+  sfml_test.vcxproj -> C:\Cours\Programmation 2 année\GP2\hae_gp2\sfml_mini_projet\x64\Debug\sfml_test.exe

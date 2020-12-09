@@ -1,0 +1,4 @@
+C:\Cours\Programmation 2 année\GP2\Case dessus\test\test-master\sfml_moteur_case_ia\x64\Debug\sfml_test.exe
+C:\Cours\Programmation 2 année\GP2\Case dessus\test\test-master\sfml_moteur_case_ia\x64\Debug\sfml_test.pdb
+C:\Cours\Programmation 2 année\GP2\hae_gp2\sfml_mini_projet\x64\Debug\sfml_test.exe
+C:\Cours\Programmation 2 année\GP2\hae_gp2\sfml_mini_projet\x64\Debug\sfml_test.pdb
